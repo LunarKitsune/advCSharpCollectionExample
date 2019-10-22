@@ -1,0 +1,11 @@
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\bin\Debug\ContractExample.exe.config
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\bin\Debug\ContractExample.exe
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\bin\Debug\ContractExample.pdb
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.csprojAssemblyReference.cache
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.frmContractdisplay.resources
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.frmMain.resources
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.Properties.Resources.resources
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.csproj.GenerateResource.cache
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.csproj.CoreCompileInputs.cache
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.exe
+C:\Users\kmacneal\source\repos\ContractExample\ContractExample\obj\Debug\ContractExample.pdb
