@@ -15,8 +15,12 @@ namespace ContractExample
         ContractorCollection collectionOfContracts = new ContractorCollection();
         RecordKeeper dataKeeper = new RecordKeeper();
 
+        bool saveContractFlag = false;
         enum AddButtonState {Add, Save }
         enum RemoveButtonState {Remove, Cancel}
+
+        AddButtonState btnAddState = AddButtonState.Add;
+        RemoveButtonState btnRemoveState = RemoveButtonState.Remove;
 
         public frmMain()
         {
@@ -33,15 +37,23 @@ namespace ContractExample
         #region Form Button Events
         private void BtnAddContract_Click(object sender, EventArgs e)
         {
-            if(AddButtonState == AddButtonState.Add)
-            {
-
-            }
+            
         }
 
         private void BtnRemoveContract_Click(object sender, EventArgs e)
         {
+            if (btnRemoveState == RemoveButtonState.Remove)
+            {
+                collectionOfContracts.RemoveContract((int)txtIDCollection.SelectedItem);
+            }
+            else
+            {
+                btnAddState = AddButtonState.Add;
+                btnRemoveState = RemoveButtonState.Remove;
 
+                btnAddContract.Text = "Add";
+                btnRemoveContract.Text = "Remove";
+            }
         }
 
         private void BtnDisplayTotal_Click(object sender, EventArgs e)
@@ -78,6 +90,32 @@ namespace ContractExample
         }
 
         #endregion General Form Events
+
+        #region General Form Methods
+
+        public void SwitchFormState(ref bool formState)
+        {
+            if(formState == false)
+            {
+                btnAddContract.Text = "Save";
+                btnRemoveContract.Text = "Cancel";
+
+                btnDisplayContract.Enabled = false;
+                btnDisplayTotal.Enabled = false;
+                formState = true;
+            }
+            else
+            {
+                btnAddContract.Text = "Add";
+                btnRemoveContract.Text = "Remove";
+
+                btnDisplayContract.Enabled = true;
+                btnDisplayTotal.Enabled = true;
+                formState = false;
+            }
+        }
+
+        #endregion General Form Methods
 
     }
 }
